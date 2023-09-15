@@ -1,0 +1,258 @@
+:root {
+  --primary: #ffc306;
+  --bg: #070a52;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "poppins" "Montserrat Alternates" sans-serif;
+  background-color: #fff;
+  color: #fff;
+}
+
+/* navbar star */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 30px;
+  background-color: var(--bg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-nav .dropbtn a {
+  color: #fff;
+  display: inline-block;
+  font-size: 3rem;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px;
+  right: 10px;
+  font-family: "Montserrat Alternates";
+}
+.navbar .dropbtn i {
+  padding: 1%;
+  margin: 1px;
+  right: 5px;
+}
+.navbar .navbar-nav .dropbtn:hover a {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav .dropbtn::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav .dropbtn:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+  display: flex;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* dropdown navbar */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 3rem;
+  border: none;
+  outline: none;
+  padding: 50px 30px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(7, 10, 82, 0.5);
+  backdrop-filter: blur(15px);
+  min-width: 500px;
+  box-shadow: 0px 8px 16px 0px rgba(7, 10, 82, 0.5);
+  z-index: 1;
+  font-size: 3rem;
+  transition: 0.3s;
+  border-radius: 10px;
+  border-spacing: 12px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(255, 255, 255);
+  padding: 30px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+.dropdown-content a:hover {
+  color: var(--primary);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown .dropdown-content a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+.dropdown .dropdown-content a:hover::after {
+  transform: scaleX(0.5);
+}
+/*dropdown navbar search track*/
+.search-box {
+  width: 1000px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.search-input {
+  width: 700px;
+  height: 100px;
+  font-size: 3rem;
+  border-radius: 15px;
+}
+.search-btn i {
+  float: right;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  color: #ffffff;
+}
+
+/* dropdown dropdown end */
+
+/* navbar end */
+
+/* Hero Section */
+.hero {
+  min-height: 50.45vw;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/Group\ 1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero .content {
+  padding: 4rem 40%;
+  margin-bottom: 10vw;
+  max-width: 230rem;
+  font-family: "poppins";
+  line-height: 1.2;
+  position: absolute;
+}
+
+.hero .content img {
+  height: 5.8vw;
+  width: 5vw;
+  float: left;
+  margin-right: 15px;
+  margin-top: 35px;
+}
+.hero .content h1 {
+  font-size: 3vw;
+  color: #19376d;
+  width: 200rem;
+  text-shadow: 1px 1px 3px rgba(255, 253, 253, 1);
+}
+
+.hero .content h2 {
+  font-size: 2.8vw;
+  color: #19376d;
+  width: 200rem;
+  text-shadow: 1px 1px 3px rgba(255, 253, 253, 1);
+}
+
+/* media Queeris */
+
+/* leptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+/* tablet */
+@media (max-width: 1024px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  /* Responsif Navber */
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 60px;
+    right: 2rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    width: 300px;
+    overflow: hidden;
+    transition: 0.3s;
+    right: -300px;
+    border-radius: 10px;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 50px;
+  }
+
+  .navbar .navbar-nav a {
+    color: #fff;
+    display: flex;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+}
+
+/* mobile phone */
+@media (max-width: 400px) {
+  html {
+    font-size: 55%;
+  }
+}
