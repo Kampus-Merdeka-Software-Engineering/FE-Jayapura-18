@@ -971,7 +971,11 @@ ul {
 .footer-col .social-links img {
   width: 230px;
   height: 100px;
-  margin-top: 2.5rem;
+  margin-top: 1.2rem;
+}
+.footer-col .social-links p {
+  text-align: justify;
+  margin-top: 0.5rem;
 }
 
 .footer-col .social-links a:hover {
