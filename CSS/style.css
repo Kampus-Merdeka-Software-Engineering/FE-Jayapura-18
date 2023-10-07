@@ -437,11 +437,11 @@ body {
 
 @media screen and (max-width: 900px) {
   .wrapper i:first-child {
-    left: -10px;
+    left: -5px;
   }
 
   .wrapper i:last-child {
-    right: -10px;
+    right: -5px;
   }
   .wrapper .carousel {
     grid-auto-columns: calc((100% / 1) - 1px);
