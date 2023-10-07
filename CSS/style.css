@@ -664,7 +664,7 @@ body {
     left: 30px;
   }
   .container_timeline.left .icon {
-    left: 267px;
+    left: 268px;
   }
   .container_timeline.right .icon {
     right: 250px;
@@ -979,33 +979,35 @@ body {
   .img-footer {
     width: 170px;
     height: 100px;
-    margin: 0 14rem;
+    margin: 0 10rem;
   }
   .footerNav p {
     text-align: center;
     width: 36rem;
-    padding: 15px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     color: #ffffff;
-    margin-left: 5rem;
+    margin-left: 1rem;
     font-size: 15px;
+    left: 1rem;
   }
 }
 @media screen and (max-width: 400px) {
   .img-footer {
     width: 170px;
     height: 100px;
-    margin: 0 2rem;
+    margin: 0 1rem;
   }
   .footerNav p {
     text-align: center;
-    width: 20rem;
-    padding: 10px;
+    width: 18rem;
+    left: 1rem;
     display: flex;
     justify-content: center;
     color: #ffffff;
     margin-left: 0;
+    margin-right: 2rem;
     font-size: 15px;
   }
 }
