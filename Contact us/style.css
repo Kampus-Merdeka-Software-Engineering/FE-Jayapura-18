@@ -477,11 +477,12 @@ form .form-row .textarea {
   .container form {
     padding: 10px 0 10px 0;
   }
-  .container form .form-row {
-    display: block;
+  .container2 form .form-row {
+    display: flex;
+    flex-wrap: wrap;
   }
   form .form-row .input-data {
-    margin: 35px 0 !important;
+    margin: 25px 0 !important;
   }
   .submit-btn .input-data {
     width: 40% !important;
@@ -496,7 +497,7 @@ form .form-row .textarea {
   background-color: var(--bg-blue);
   width: 100%;
   padding: 30px 30px 5px;
-  margin-top: 38rem;
+  margin-top: 44rem;
   position: absolute;
 }
 
@@ -524,7 +525,7 @@ form .form-row .textarea {
   background-color: rgb(12, 14, 90);
   padding: 15px;
   text-align: center;
-  margin-top: 54rem;
+  margin-top: 60rem;
   position: absolute;
   width: 100%;
 }

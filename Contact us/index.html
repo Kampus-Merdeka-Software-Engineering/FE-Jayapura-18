@@ -68,8 +68,8 @@
                                 </div>
                                 <div class="dropdown-content">
                                     <a href="/index.html #FAQ">FAQ</a> 
-                                    <a href="#Article">Article</a> 
-                                    <a href="#Terms">Terms</a> 
+                                    <a href="./../article/index.html">Article</a> 
+                                    <a href="./../terms of service/index.html">Terms</a> 
                                 </div>
                             </div>
                         </div>
@@ -106,12 +106,12 @@
         <form action="#">
           <div class="form-row">
             <div class="input-data">
-              <input type="text" required />
+              <input type="text" required id="nama"/>
               <div class="underline"></div>
               <label for="">Nama</label>
             </div>
             <div class="input-data">
-              <input type="text" required />
+              <input type="text" required id="email" />
               <div class="underline"></div>
               <label for="">Email</label>
             </div>
@@ -121,7 +121,7 @@
               <form action="proses.php" method="get">
                 <p>
                   Jenis Keluhan
-                  <select name="Jenis Keluhan">
+                  <select name="Jenis Keluhan" id="jeniskeluhan">
                     <option value="Paket tidak sesuai">Paket tidak sesuai</option>
                     <option value="Keterlambatan paket" selected="selected">
                       Keterlambatan paket
@@ -132,13 +132,13 @@
               </form>
             </div>
             <div class="input-data">
-              <input type="text" required />
+              <input type="text" required id="deskripsi"/>
               <div class="underline"></div>
               <label for="">Descripsi</label>
             </div>
           </div>
         </form>
-        <input class="box" type="submit" name="tombol" value="kirim" />
+        <input class="box" type="submit" name="tombol" value="kirim" onclick="kirim(event)" />
     </div>
 
     <div class="footerContainer">
@@ -152,8 +152,6 @@
     <div class="footerBottom">
         <p> Copyright &copy;2023; Designed by  <span class="designer">Jayapura Express</span> </p>
     </div>
-</body>
-</section>
 </body>
 <script src="script.js"></script>
 </html>
