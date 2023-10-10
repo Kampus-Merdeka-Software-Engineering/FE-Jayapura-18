@@ -296,6 +296,7 @@ body {
 /*articel*/
 .container-box {
   display: flex;
+  text-decoration: none;
 }
 img {
   width: 100%;
@@ -341,9 +342,13 @@ img {
 }
 
 @media screen and (max-width: 900px) {
+  .container-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .box {
-    margin-left: 3rem;
-    width: 70%;
+    margin-left: 1rem;
+    width: 100rem;
     margin-top: 6rem;
   }
 }
@@ -352,7 +357,7 @@ img {
   background-color: var(--bg-blue);
   width: 100%;
   padding: 30px 30px 5px;
-  margin-top: 47rem;
+  margin-top: 0;
   position: absolute;
 }
 
@@ -380,7 +385,7 @@ img {
   background-color: rgb(12, 14, 90);
   padding: 15px;
   text-align: center;
-  margin-top: 61.5rem;
+  margin-top: 14rem;
   position: absolute;
   width: 100%;
 }
@@ -396,10 +401,10 @@ img {
 }
 @media screen and (max-width: 900px) {
   .footerContainer {
-    margin-top: 120rem;
+    margin-top: 0;
   }
   .footerBottom {
-    margin-top: 138rem;
+    margin-top: 18rem;
   }
   .img-footer {
     width: 170px;
