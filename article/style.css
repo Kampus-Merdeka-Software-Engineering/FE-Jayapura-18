@@ -294,6 +294,9 @@ body {
 }
 
 /*articel*/
+.container-box {
+  display: flex;
+}
 img {
   width: 100%;
   border-radius: 8px;
@@ -301,7 +304,6 @@ img {
 }
 .box {
   width: 30%;
-  float: left;
   margin: 90px 20px;
   background-color: #fff;
   padding: 15px;
