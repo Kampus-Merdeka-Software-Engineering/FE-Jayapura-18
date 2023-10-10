@@ -20,23 +20,26 @@ function kirim(event) {
   const jeniskeluhan = document.querySelector("#jeniskeluhan").value;
   const deskripsi = document.querySelector("#deskripsi").value;
 
-  fetch("http://localhost:3000/list-kritik-dan-saran", {
-    method: "POST",
-    headers: {
-      "content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      nama: nama,
-      email: email,
-      janiskeluhan: jeniskeluhan,
-      deskripsi: deskripsi,
-    }),
-  })
+  fetch(
+    "https://be-jayapura-18-production.up.railway.app/list-kritik-dan-saran",
+    {
+      method: "POST",
+      headers: {
+        "content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        nama: nama,
+        email: email,
+        jenisKeluhan: jeniskeluhan,
+        deskripsi: deskripsi,
+      }),
+    }
+  )
     .then((Response) => Response.json())
     .then((Response) => {
-      console.log(Response);
+      alert("Pesan Anda Telah Terkirim");
     })
     .catch((Error) => {
-      console.error(error);
+      console.error(Error);
     });
 }
